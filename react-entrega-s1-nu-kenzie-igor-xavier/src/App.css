@@ -1,0 +1,91 @@
+.Dark {
+  background-color: #000000;
+  height: 100vw;
+}
+.Light {
+  background-color: #fbfbfb;
+}
+header {
+  background-color: #fbfbfb;
+  width: 100vw;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+}
+header button {
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 8px;
+  color: #868e96;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header button:hover {
+  background-color: #868e96;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.divPai {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.FormVt {
+  width: 50%;
+  margin-right: 59px;
+}
+.voltarInicio {
+  width: 64px;
+  height: 40px;
+}
+.inicio {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.divEsq {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 100px;
+  padding: 12px;
+  align-items: flex-start;
+  margin-left: 20%;
+  padding-top: 12%;
+  width: 1200px;
+}
+
+.divEsq h2 {
+  font-style: normal;
+  text-align: left;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.divEsq p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.imgNova img {
+  width: 75%;
+}
+.inicio {
+  margin-top: 100px;
+  background-color: black;
+}
