@@ -10,7 +10,7 @@ import TotalMoney from "./componentes/TotalMoney/TotalMoney";
 function App() {
   const [listTransactions, setListTransactions] = useState([
     { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: -150 },
+    { description: "Conta de luz", type: "saída", value: 150 },
   ]);
   const [iniciou, setIniciou] = useState(false);
   function addItem(item) {
