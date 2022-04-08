@@ -2,22 +2,22 @@
   background: #ffffff;
   border: 1px solid #e9ecef;
   border-radius: 4px;
-  margin-left: 258px;
   margin-top: 16px;
-  width: 60%;
+  margin-left: 30%;
+  width: 31.55vw;
   height: 96px;
   padding: 18px 24px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
+
 .totalP {
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
   color: #fd377e;
-  justify-self: flex-end;
-  margin-left: 124px;
+  margin-left: 50%;
 }
 .totalLabel {
   font-weight: 400;
@@ -35,4 +35,23 @@
 .valorTotal {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .total {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-left: 0;
+    width: 100vw;
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .totalP {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fd377e;
+  }
 }

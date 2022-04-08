@@ -23,13 +23,17 @@ function App() {
           <div className="incio">
             <div className="divEsq">
               <div>
-                <img className="logoInicio" src={Logo2} />
+                <img className="logoInicio" alt="logo nu kenzie" src={Logo2} />
                 <h2>Centralize o controle das suas finanças</h2>
                 <p>de forma rápida e segura</p>
                 <button onClick={() => setIniciou(true)}>Iniciar</button>
               </div>
               <div className="imgNova">
-                <img className="imgInicio" src={figmaImg} />
+                <img
+                  className="imgInicio"
+                  alt="img boas vindas"
+                  src={figmaImg}
+                />
               </div>
             </div>
           </div>
@@ -38,7 +42,7 @@ function App() {
         <body className="Light">
           <div className="divPai">
             <header>
-              <img className="Logo" src={Logo} />
+              <img className="Logo" alt="logo nu kenzie" src={Logo} />
               <button
                 className="voltarInicio"
                 onClick={() => setIniciou(false)}
@@ -55,7 +59,22 @@ function App() {
               />
               <TotalMoney listTransactions={listTransactions} />
             </div>
+
             <div>
+              <div className="filtro">
+                <ul className="botoesFiltro">
+                  <p className="text-filtro">Resumo financeiro</p>
+                  <li>
+                    <button className="btFiltroAtivo">Todos</button>
+                  </li>
+                  <li>
+                    <button className="btInativo">Entradas</button>
+                  </li>
+                  <li>
+                    <button className="btInativo">Despesas</button>
+                  </li>
+                </ul>
+              </div>
               <List listTransactions={listTransactions} Card={Card} />
             </div>
           </div>

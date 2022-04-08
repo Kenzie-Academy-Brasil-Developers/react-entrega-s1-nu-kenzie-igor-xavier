@@ -2,7 +2,11 @@ import "./stylesForm.css";
 import { useState } from "react";
 
 function Form({ listTransactions, setListTransactions, setIniciou, addItem }) {
-  const [item, setItem] = useState({});
+  const [item, setItem] = useState({
+    description: "Sem descrição",
+    value: 0,
+    type: "entrada",
+  });
   function enviar(item) {
     return addItem(item);
   }

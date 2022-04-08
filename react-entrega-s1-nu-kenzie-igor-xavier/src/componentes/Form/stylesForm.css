@@ -1,10 +1,9 @@
 .divForm {
   display: flex;
   flex-direction: row;
-  width: 67%;
+  margin-left: 30%;
   padding-left: 25px;
   margin-top: 39px;
-  margin-left: 258px;
   border: 1px solid #e9ecef;
   box-sizing: border-box;
   border-radius: 4px;
@@ -12,6 +11,8 @@
   padding-left: 24px;
   padding-right: 24px;
   align-items: baseline;
+  margin-left: 30%;
+  width: 35vw;
 }
 .divForm .divUm {
   display: flex;
@@ -49,7 +50,6 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   background: #f8f9fa;
   border: 2px solid #f8f9fa;
   box-sizing: border-box;
@@ -83,7 +83,7 @@ select {
   color: #868e96;
 }
 button {
-  width: 314px;
+  width: 100%;
   height: 48px;
   background: #fd377e;
   border: 2px solid #fd377e;
@@ -100,4 +100,42 @@ button {
 button:hover {
   background-color: #e34981;
   color: #f8f9fa;
+}
+@media screen and (max-width: 600px) {
+  .divForm {
+    width: 190vw;
+    flex-direction: column;
+  }
+  button {
+    width: 50%;
+  }
+
+  .divForm {
+    width: 100vw;
+    margin: 0%;
+  }
+  select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    border: 2px solid #f8f9fa;
+    border-radius: 8px;
+    width: 99%;
+    height: 52.8px;
+    color: #868e96;
+    margin: 0%;
+  }
+  input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #f8f9fa;
+    border: 2px solid #f8f9fa;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 52.8px;
+    width: 80px;
+  }
 }
