@@ -12,7 +12,7 @@
   padding-right: 24px;
   align-items: baseline;
   margin-left: 30%;
-  width: 35vw;
+  width: 400px;
 }
 .divForm .divUm {
   display: flex;
@@ -105,14 +105,11 @@ button:hover {
   .divForm {
     width: 190vw;
     flex-direction: column;
+    width: 100vw;
+    margin: 0%;
   }
   button {
     width: 50%;
-  }
-
-  .divForm {
-    width: 100vw;
-    margin: 0%;
   }
   select {
     display: flex;

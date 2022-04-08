@@ -1,7 +1,7 @@
 import "./TotalMoneyStyles.css";
 function TotalMoney({ listTransactions }) {
   const total = listTransactions.reduce((acc, valor) => {
-    return valor.type == "entrada"
+    return valor.type === "entrada"
       ? acc + parseInt(valor.value)
       : acc - parseInt(valor.value);
   }, 0);

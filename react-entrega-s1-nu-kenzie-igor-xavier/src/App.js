@@ -59,23 +59,22 @@ function App() {
               />
               <TotalMoney listTransactions={listTransactions} />
             </div>
-
-            <div>
-              <div className="filtro">
-                <ul className="botoesFiltro">
-                  <p className="text-filtro">Resumo financeiro</p>
-                  <li>
-                    <button className="btFiltroAtivo">Todos</button>
-                  </li>
-                  <li>
-                    <button className="btInativo">Entradas</button>
-                  </li>
-                  <li>
-                    <button className="btInativo">Despesas</button>
-                  </li>
-                </ul>
+            <div className="filtro">
+              <ul className="botoesFiltro">
+                <p className="text-filtro">Resumo financeiro</p>
+                <li>
+                  <button className="btFiltroAtivo">Todos</button>
+                </li>
+                <li>
+                  <button className="btInativo">Entradas</button>
+                </li>
+                <li>
+                  <button className="btInativo">Despesas</button>
+                </li>
+              </ul>
+              <div>
+                <List listTransactions={listTransactions} Card={Card} />
               </div>
-              <List listTransactions={listTransactions} Card={Card} />
             </div>
           </div>
         </body>
